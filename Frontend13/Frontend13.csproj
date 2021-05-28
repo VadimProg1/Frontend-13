@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>cf313eb5-bb56-4098-b580-b44a91421123</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+  </ItemGroup>
+
+  <Target Name="RunGulp" BeforeTargets="Build">
+    <Exec Command="node_modules\.bin\gulp.cmd" />
+  </Target>
+
+
+</Project>
